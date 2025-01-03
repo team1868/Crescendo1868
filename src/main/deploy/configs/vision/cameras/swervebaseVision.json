@@ -1,0 +1,10 @@
+{
+    "cameraFiles" : [
+        "swervebase/camera0.json"
+    ],
+    "visionPID": {
+        "p": 0.001,
+        "i": 0.0,
+        "d": 0.0
+}
+}

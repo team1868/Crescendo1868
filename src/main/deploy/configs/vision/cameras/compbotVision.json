@@ -1,0 +1,12 @@
+{
+  "cameraFiles": [
+    "compbot/compCamera0.json",
+    "compbot/compCamera1.json",
+    "compbot/compCamera2.json"
+  ],
+  "visionPID": {
+    "p": 0.001,
+    "i": 0.0,
+    "d": 0.0
+  }
+}

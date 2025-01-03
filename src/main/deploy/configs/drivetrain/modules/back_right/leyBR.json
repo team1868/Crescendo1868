@@ -1,0 +1,31 @@
+{
+  "id": 3,
+  "drive": {
+    "type": "falcon",
+    "id": 14,
+    "canbus": "Default Name"
+  },
+  "unfusedSteer": {
+    "type": "falcon",
+    "id": 15,
+    "canbus": "Default Name"
+  },
+  "unfusedEncoder": {
+    "type": "cancoder",
+    "id": 2,
+    "canbus": "Default Name"
+  },
+  "encoderConfig": {
+    "zeroToOne": true,
+    "clockwisePositive": true,
+    "magnetOffset": {
+      "unit": "deg",
+      "value": 307.46
+    }
+  },
+  "moduleLocation": {
+    "unit": "in",
+    "y": -10.375,
+    "x": -10.375
+  }
+}

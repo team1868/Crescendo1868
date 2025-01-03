@@ -1,0 +1,48 @@
+{
+  "name": "Shooter Roller",
+  "rollerMotor": {
+    "type": "KRAKEN_X60_FOC",
+    "id": 34,
+    "canbus": "rio"
+  },
+  "gearRatio": [[18, 12]],
+  "feedforward": {
+    "s": 0.27,
+    "v": 0.125,
+    "a": 0.0
+  },
+  "trapezoidalLimits": {
+    "unit": "rot",
+    "velocity": 100.0,
+    "acceleration": 500.0
+  },
+  "defaultTolerances": {
+    "unit": "rot",
+    "lowerTolerance": 0.3,
+    "upperTolerance": 0.3
+  },
+  "rollerMotorControl": {
+    "clockwisePositive": false,
+    "brakeMode": true,
+    "motor": {
+      "slot0PIDConstants": {
+        "p": 1.0,
+        "i": 0.0,
+        "d": 0.0,
+        "s": 0.0,
+        "g": 0.0,
+        "v": 0.0,
+        "a": 0.0
+      }
+    },
+    "motorCurrentLimits": {
+      "statorEnableLimit": true,
+      "statorPeakLimit": 40,
+      "supplyEnableLimit": true,
+      "supplyPeakLimit": 40,
+      "supplyContinuousLimit": 40,
+      "peakDuration": 0.1
+    }
+  },
+  "rollerSimFile": "compbotShooterRollerSimConf.json"
+}

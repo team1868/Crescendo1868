@@ -1,0 +1,61 @@
+{
+  "name": "Climber Elevator",
+  "motor": {
+    "type": "KRAKEN_X60_FOC",
+    "id": 46,
+    "canbus": "rio"
+  },
+  "gearRatio": [
+    [48, 14],
+    [48, 24]
+  ],
+  "drumDiameter": {
+    "unit": "in",
+    "value": 1.273
+  },
+  "feedforward": {
+    "s": 0.103,
+    "g": 0.236,
+    "v": 7.9365079365,
+    "a": 0.0
+  },
+  "trapezoidalLimits": {
+    "unit": "meter",
+    "velocity": 1.0,
+    "acceleration": 2.0
+  },
+  "positionalLimits": {
+    "unit": "meter",
+    "min": 0.0,
+    "max": 0.398
+  },
+  "defaultTolerances": {
+    "unit": "meter",
+    "lowerTolerance": 0.015,
+    "upperTolerance": 0.015
+  },
+  "motorControl": {
+    "clockwisePositive": true,
+    "brakeMode": false,
+    "motorCurrentLimits": {
+      "statorEnableLimit": true,
+      "statorPeakLimit": 80,
+      "supplyEnableLimit": true,
+      "supplyPeakLimit": 80,
+      "supplyContinuousLimit": 60,
+      "peakDuration": 0.8
+    },
+    "motor": {
+      "slot0PIDConstants": {
+        "p": 5.0,
+        "i": 0.0,
+        "d": 0.0,
+        "s": 0.0,
+        "g": 0.0,
+        "v": 0.0,
+        "a": 0.0
+      }
+    }
+  },
+  "elevatorSimFile": "compbotClimberElevatorSimConf.json"
+}

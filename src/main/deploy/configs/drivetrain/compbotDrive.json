@@ -1,0 +1,89 @@
+{
+  "moduleFiles": [
+    "front_right/compbotFR.json",
+    "back_right/compbotBR.json",
+    "back_left/compbotBL.json",
+    "front_left/compbotFL.json"
+  ],
+  "moduleControl": "compbotModules.json",
+  "dimensions": {
+    "trackWidthIn": 20.75,
+    "trackLengthIn": 20.75,
+    "frameWidthIn": 26.5,
+    "frameLengthIn": 26.5,
+    "bumperSegmentDepthIn": 3.25,
+    "halfFrameWidthIn": 13.25,
+    "halfFrameLengthIn": 13.25,
+    "bumperLengthIn": 33.0,
+    "bumperWidthIn": 33.0,
+    "halfBumperLengthIn": 16.5,
+    "halfBumperWidthIn": 16.5
+  },
+  "drivetrainControl": {
+    "translationalSlewingRate": {
+      "unit": "MPS2",
+      "value": 15.0
+    },
+    "angularSlewingRate": {
+      "unit": "DPS2",
+      "value": 900.0
+    },
+    "translationalTolerance": {
+      "unit": "In",
+      "value": 0.5
+    },
+    "rotationalTolerance": {
+      "unit": "Deg",
+      "value": 1.0
+    },
+    "defaultLimits": {
+      "translation": {
+        "unit": "meter",
+        "velocity": 4.9639955057254799,
+        "acceleration": 15.0
+      },
+      "angular": {
+        "unit": "rot",
+        "velocity": 2.119896664,
+        "acceleration": 9.0
+      }
+    },
+    "defaultTrapezoidalLimits": {
+      "translation": {
+        "unit": "meter",
+        "velocity": 4.9639955057254799,
+        "acceleration": 5.0
+      },
+      "angular": {
+        "unit": "deg",
+        "velocity": 540.0,
+        "acceleration": 360.0
+      }
+    },
+    "translationalControl": {
+      "p": 3.0,
+      "i": 0.0,
+      "d": 0.0
+    },
+    "rotationalControl": {
+      "p": 2.0,
+      "i": 0.0,
+      "d": 0.0
+    },
+    "autoTranslationalControl": {
+      "p": 3.0,
+      "i": 0.0,
+      "d": 0.0
+    },
+    "autoRotationalControl": {
+      "p": 2.0,
+      "i": 0.0,
+      "d": 0.0
+    }
+  },
+  "IMU": {
+    "type": "pigeon2",
+    "canbus": "Default Name",
+    "id": 50
+  }
+}

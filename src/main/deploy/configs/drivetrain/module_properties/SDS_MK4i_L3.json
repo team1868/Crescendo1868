@@ -1,0 +1,16 @@
+{
+  "wheelDiameter": {
+    "unit": "inch",
+    "value": 3.94
+  },
+  "steerRatio": [
+    [50, 14],
+    [60, 10]
+  ],
+  "steerEncoderRatio": [[1, 1]],
+  "driveRatio": [
+    [50, 14],
+    [16, 28],
+    [45, 15]
+  ]
+}

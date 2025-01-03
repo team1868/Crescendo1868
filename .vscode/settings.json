@@ -1,0 +1,85 @@
+{
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "java.server.launchMode": "Standard",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "bin/": true,
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true,
+    "**/*~": true
+  },
+  "java.test.config": [
+    {
+      "name": "WPIlibUnitTests",
+      "workingDirectory": "${workspaceFolder}/build/jni/release",
+      "vmargs": [
+        "-Djava.library.path=${workspaceFolder}/build/jni/release"
+      ],
+      "env": {
+        "LD_LIBRARY_PATH": "${workspaceFolder}/build/jni/release",
+        "DYLD_LIBRARY_PATH": "${workspaceFolder}/build/jni/release"
+      }
+    },
+  ],
+  "java.test.defaultConfig": "WPIlibUnitTests",
+  "java.format.settings.url": "eclipse-formatter.xml",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "xaver.clang-format",
+  "[groovy]": {
+    "editor.defaultFormatter": "ms-vsliveshare.vsliveshare"
+  },
+  "cSpell.words": [
+    "Antiscrub",
+    "apriltag",
+    "Arducam",
+    "auton",
+    "BRINGUP",
+    "BUILDABLE",
+    "canbus",
+    "CANCODER",
+    "Choreo",
+    "compbot",
+    "CONFS",
+    "controlboard",
+    "CTRE",
+    "Daqs",
+    "Deadband",
+    "DEGPS",
+    "Devs",
+    "dtheta",
+    "feedforward",
+    "Leds",
+    "lvuser",
+    "Microsystem",
+    "Minisystem",
+    "Minisystems",
+    "Odometry",
+    "PIDF",
+    "PIDSGVA",
+    "practicebot",
+    "PREMATCH",
+    "RADPS",
+    "ROTPS",
+    "setpoint",
+    "Setpoints",
+    "SOTF",
+    "SPOOKIES",
+    "SUBWOOFER",
+    "swervebase",
+    "Teleop",
+    "unfused",
+    "Unprofiled",
+    "velo",
+    "Wpilib",
+    "WPILOG"
+  ],
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "cameraName": "Arducam_OV9281_USB_Camera",
+  "id": 0,
+  "robotToCamera": {
+    "translation": {
+      "unit" :  "inch", 
+      "x": 0.0,
+      "y": 0.0,
+      "z" : 0.0
+    },
+    "rotation": {
+      "unit" :  "degree", 
+      "yaw": 0.0,
+      "pitch": -24.0,
+      "roll": 0.0
+    }
+  },
+  "fieldObjectName": "LEFT",
+  "x_resolution": 1280
+}

@@ -1,0 +1,11 @@
+{
+  "rollerFile": "practicebotIntakeRollerConf.json",
+  "pivotFile": "practicebotIntakePivotConf.json",
+  "pivotConflict": "shooter",
+  "pivotUnsafePositionalLimits": {
+    "unit": "deg",
+    "min": 20.0,
+    "max": 77.5
+  },
+  "breakBeamChannel": 1
+}

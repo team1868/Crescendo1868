@@ -1,0 +1,32 @@
+{
+  "numMotors": 2,
+  "carriageMass": {
+      "unit": "lb",
+      "value": 2
+  }, 
+  "mech2dDim": 80,
+  "lineLength": 30,
+  "angle": 90,
+  "simMotor": {
+      "slot0PIDConstants": {
+        "p": 0.0,
+        "i": 0.0,
+        "d": 0.0,
+        "s": 0.0,
+        "g": 0.0,
+        "v": 0.0,
+        "a": 0.0
+    }
+  },
+  "followerSimMotor": {
+    "slot0PIDConstants": {
+      "p": 0.0,
+      "i": 0.0,
+      "d": 0.0,
+      "s": 0.0,
+      "g": 0.0,
+      "v": 0.0,
+      "a": 0.0
+    }
+  }
+}
