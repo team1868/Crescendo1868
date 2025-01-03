@@ -1,0 +1,79 @@
+{
+  "moduleType": "SDS_MK4_L2",
+  "driveControl": {
+    "clockwisePositive": false,
+    "brakeMode": false,
+    "motor": {
+      "slot0PIDConstants": {
+        "p": 0.20019550342130987,
+        "i": 0.0,
+        "d": 0.0,
+        "s": 0.0,
+        "g": 0.0,
+        "v": 0.0,
+        "a": 0.0
+      }
+    },
+    "simMotor": {
+      "slot0PIDConstants": {
+        "p": 0.20019550342130987,
+        "i": 0.0,
+        "d": 0.0,
+        "s": 0.0,
+        "g": 0.0,
+        "v": 0.0,
+        "a": 0.0
+      }
+    },
+    "motorCurrentLimits": {
+      "supplyEnableLimit": true,
+      "supplyContinuousLimit": 30,
+      "supplyPeakLimit": 40,
+      "statorEnableLimit": true,
+      "statorPeakLimit": 90,
+      "peakDuration": 0.1
+    },
+    "feedforward": {
+      "s": 0.667,
+      "v": 2.44,
+      "a": 0.27
+    }
+  },
+  "steerControl": {
+    "clockwisePositive": false,
+    "brakeMode": true,
+    "motor": {
+      "slot0PIDConstants": {
+        "p": 15.375014662756598,
+        "i": 0.0,
+        "d": 0.307500293255132,
+        "s": 0.0,
+        "g": 0.0,
+        "v": 0.0,
+        "a": 0.0
+      }
+    },
+    "simMotor": {
+      "slot0PIDConstants": {
+        "p": 0.40039100684261975,
+        "i": 0.0,
+        "d": 0.0,
+        "s": 0.0,
+        "g": 0.0,
+        "v": 0.0,
+        "a": 0.0
+      }
+    },
+    "motorCurrentLimits": {
+      "supplyEnableLimit": true,
+      "supplyContinuousLimit": 30,
+      "supplyPeakLimit": 40,
+      "statorEnableLimit": true,
+      "statorPeakLimit": 40,
+      "peakDuration": 0.1
+    },
+    "closedLoopConfigs": {
+      "continuousWrap": true
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "cameraName": "Arducam_Color",
+  "id": 2,
+  "robotToCamera": {
+    "translation": {
+      "unit" :  "inch", 
+      "x": 0.0,
+      "y": 6.857,
+      "z" : 20.52
+    },
+    "rotation": {
+      "unit" :  "degree", 
+      "yaw": 0.0,
+      "pitch": -104.5,
+      "roll": 0.0
+    }
+  },
+  "fieldObjectName": "COLOR",
+  "x_resolution": 1280
+}

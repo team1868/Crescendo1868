@@ -1,0 +1,30 @@
+
+// Good within 5 meters, high otherwise. Potentially augment with no target specific equations
+  "targetPivotQuadratic": {
+    "unit": "deg",
+    "coefficients": [0.3881, -5.7741, 29.923, -72.683]
+  },
+  "minPivotQuadratic": {
+    "unit": "deg",
+    "coefficients": [0.3765, -5.5377, 28.264, -68.307]
+  },
+  "maxPivotQuadratic": {
+    "unit": "deg",
+    "coefficients": [0.3875, -5.8791, 31.201, -76.759]
+  },
+
+
+// Manual push for beyond 5 meters
+  "targetPivotQuadratic": {
+    "unit": "deg",
+    "coefficients": [0.2862, -4.571, 26.367, 69.884]
+  },
+  "minPivotQuadratic": {
+    "unit": "deg",
+    "coefficients": [0.2879, -4.4831, 25.174, -65.903]
+  },
+  "maxPivotQuadratic": {
+    "unit": "deg",
+    "coefficients": [0.2844, -4.6589, 27.56, -73.866]
+  },
+

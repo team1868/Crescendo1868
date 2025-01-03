@@ -1,0 +1,16 @@
+@team1868/2024reviewers
+
+*.h             @team1868/2024reviewers
+*.java          @team1868/2024reviewers
+*.cpp           @team1868/2024reviewers
+src/            @team1868/2024reviewers
+vendordeps/     @team1868/2024reviewers
+
+*.yaml          @team1868/2024reviewers
+*.txt           @team1868/2024reviewers
+gradle/         @team1868/2024reviewers
+.github/        @team1868/2024reviewers
+.wpilib/        @team1868/2024reviewers
+.vscode/        @team1868/2024reviewers
+.clang-format   @team1868/2024reviewers
+.gitignore      @team1868/2024reviewers

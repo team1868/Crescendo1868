@@ -1,0 +1,41 @@
+package frc.robot.commands.base;
+
+import edu.wpi.first.wpilibj2.command.Command;
+import frc.robot.subsystems.Climber.ElevatorConstants;
+import frc.robot.subsystems.minor.TagalongElevator;
+import frc.robot.utils.ElevatorAugment;
+import frc.robot.utils.TagalongSubsystemBase;
+
+public class ElevatorPrepCommand<T extends TagalongSubsystemBase & ElevatorAugment>
+    extends Command {
+  private final TagalongElevator _elevator;
+
+  public ElevatorPrepCommand(int id, T elevator) {
+    _elevator = elevator.getElevator(id);
+
+    addRequirements(elevator);
+  }
+
+  public ElevatorPrepCommand(T elevator) {
+    this(0, elevator);
+  }
+
+  @Override
+  public void initialize() {
+    _elevator.setElevatorPower(ElevatorConstants.ELEVATOR_ZEROING_SPEED_MPS);
+  }
+
+  @Override
+  public void execute() {}
+
+  @Override
+  public void end(boolean interrupted) {
+    _elevator.setElevatorPower(0.0);
+    _elevator.setElevatorHeight(0);
+  }
+
+  @Override
+  public boolean isFinished() {
+    return false;
+  }
+}

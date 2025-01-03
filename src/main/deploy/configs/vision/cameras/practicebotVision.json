@@ -1,0 +1,10 @@
+{
+    "cameraFiles" : [
+        "practicebot/camera0.json", "practicebot/camera1.json", "practicebot/camera2.json"
+    ],
+    "visionPID": {
+        "p": 0.001,
+        "i": 0.0,
+        "d": 0.0
+}
+}

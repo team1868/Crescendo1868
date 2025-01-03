@@ -1,0 +1,96 @@
+{
+  "name": "Shooter Pivot",
+  "fusedDevices": {
+    "motor": {
+      "type": "kraken",
+      "id": 33,
+      "canbus": "Default Name"
+    },
+    "encoder": {
+      "type": "cancoder",
+      "id": 35,
+      "canbus": "Default Name"
+    }
+  },
+  "motorToPivot": [
+    [66, 12],
+    [54, 30],
+    [58, 30],
+    [66, 24]
+  ],
+  "encoderToPivot": [[1, 1]],
+  "feedforward": {
+    "s": 0.01,
+    "g": 0.41,
+    "v": 1.05,
+    "a": 0.0
+  },
+  "trapezoidalLimits": {
+    "unit": "deg",
+    "velocity": 1080.0,
+    "acceleration": 3060.0
+  },
+  "positionalLimits": {
+    "unit": "deg",
+    "min": -53.0,
+    "max": 50.27
+  },
+  "defaultTolerances": {
+    "unit": "deg",
+    "lowerTolerance": 3.0,
+    "upperTolerance": 3.0
+  },
+  "encoderConfig": {
+    "zeroToOne": true,
+    "clockwisePositive": true,
+    "magnetOffset": {
+      "unit": "deg",
+      "value": -116.71875
+    }
+  },
+  "pivotMotorControl": {
+    "clockwisePositive": false,
+    "brakeMode": false,
+    "motorCurrentLimits": {
+      "statorEnableLimit": true,
+      "statorPeakLimit": 80,
+      "supplyEnableLimit": true,
+      "supplyPeakLimit": 80,
+      "supplyContinuousLimit": 80,
+      "peakDuration": 0.8
+    },
+    "motor": {
+      "slot0PIDConstants": {
+        "p": 60.0,
+        "i": 0.0,
+        "d": 0.5,
+        "s": 0.0,
+        "g": 0.0,
+        "v": 0.0,
+        "a": 0.0
+      }
+    },
+    "simMotor": {
+      "slot0PIDConstants": {
+        "p": 0.0,
+        "i": 0.0,
+        "d": 0.0,
+        "s": 0.0,
+        "g": 0.0,
+        "v": 0.0,
+        "a": 0.0
+      }
+    },
+    "closedLoopConfigs": {
+      "continuousWrap": true
+    }
+  },
+  "ffOffset": {
+    "unit": "deg",
+    "value": 26.0
+  },
+  "profileOffset": {
+    "unit": "deg",
+    "value": 0.0
+  }
+}

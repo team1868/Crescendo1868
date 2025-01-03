@@ -1,0 +1,33 @@
+{
+  "id": 0,
+  "drive": {
+    "type": "kraken",
+    "id": 16,
+    "canbus": "Default Name"
+  },
+  "fusedSteerDevices": {
+    "motor": {
+      "type": "kraken",
+      "id": 17,
+      "canbus": "Default Name"
+    },
+    "encoder": {
+      "type": "cancoder",
+      "id": 23,
+      "canbus": "Default Name"
+    }
+  },
+  "encoderConfig": {
+    "zeroToOne": true,
+    "clockwisePositive": false,
+    "magnetOffset": {
+      "unit": "deg",
+      "value": -202.93
+    }
+  },
+  "moduleLocation": {
+    "unit": "in",
+    "y": 10.375,
+    "x": 10.375
+  }
+}

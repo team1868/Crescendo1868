@@ -1,0 +1,58 @@
+{
+  "name": "Intake Roller",
+  "rollerMotor": {
+    "type": "kraken",
+    "id": 41,
+    "canbus": "rio"
+  },
+  "gearRatio": [[24, 12]],
+  "feedforward": {
+    "s": 0.0,
+    "v": 0.0,
+    "a": 0.0
+  },
+  "trapezoidalLimits": {
+    "unit": "rot",
+    "velocity": 90.0,
+    "acceleration": 200.0
+  },
+  "defaultTolerances": {
+    "unit": "rot",
+    "lowerTolerance": 3.0,
+    "upperTolerance": 3.0
+  },
+  "rollerMotorControl": {
+    "clockwisePositive": false,
+    "brakeMode": false,
+    "motor": {
+      "slot0PIDConstants": {
+        "p": 500.0,
+        "i": 0.0,
+        "d": 0.0,
+        "s": 0.0,
+        "g": 0.0,
+        "v": 0.0,
+        "a": 0.0
+      }
+    },
+    "simMotor": {
+      "slot0PIDConstants": {
+        "p": 0.0,
+        "i": 0.0,
+        "d": 0.0,
+        "s": 0.0,
+        "g": 0.0,
+        "v": 0.0,
+        "a": 0.0
+      }
+    },
+    "motorCurrentLimits": {
+      "statorEnableLimit": true,
+      "statorPeakLimit": 80,
+      "supplyEnableLimit": true,
+      "supplyPeakLimit": 140,
+      "supplyContinuousLimit": 80,
+      "peakDuration": 1.0
+    }
+  }
+}

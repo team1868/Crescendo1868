@@ -1,0 +1,9 @@
+{
+  "candle": {
+    "type": "candle",
+    "id": 49,
+    "canbus": "rio"
+  },
+  "sectionLengths": [63],
+  "ledStripType": "rgb"
+}
