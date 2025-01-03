@@ -1,0 +1,45 @@
+{
+  "name": "Test pivot",
+  "fusedDevices": {
+    "motor": { "type": "falcon", "id": 33, "canbus": "rio" },
+    "encoder": { "type": "cancoder", "id": 35, "canbus": "rio" }
+  },
+  "motorToPivot": [[32, 1]],
+  "encoderToPivot": [[1, 1]],
+  "feedforward": { "s": 0.0, "v": 0.6, "a": 0.0 },
+  "trapezoidalLimits": { "unit": "deg", "velocity": 200, "acceleration": 400 },
+  "positionalLimits": { "unit": "deg", "min": 0.0, "max": 180.0 },
+  "defaultTolerances": {
+    "unit": "deg",
+    "lowerTolerance": 3.0,
+    "upperTolerance": 3.0
+  },
+  "encoderConfig": {
+    "zeroToOne": true,
+    "magnetOffset": { "unit": "rot", "value": 0.391 },
+    "clockwisePositive": false
+  },
+  "pivotMotorControl": {
+    "clockwisePositive": true,
+    "brakeMode": false,
+    "motorCurrentLimits": {
+      "statorEnableLimit": true,
+      "statorPeakLimit": 40,
+      "supplyEnableLimit": true,
+      "supplyPeakLimit": 40,
+      "supplyContinuousLimit": 40,
+      "peakDuration": 0.1
+    },
+    "motor": {
+      "slot0PIDConstants": {
+        "p": 0.0,
+        "i": 0.0,
+        "d": 0.0,
+        "s": 0.0,
+        "g": 0.0,
+        "v": 0.0,
+        "a": 0.0
+      }
+    }
+  }
+}

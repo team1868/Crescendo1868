@@ -1,0 +1,11 @@
+{
+  "rollerFile": "compbotIntakeRollerConf.json",
+  "pivotFile": "compbotIntakePivotConf.json",
+  "pivotConflict": "shooter",
+  "pivotUnsafePositionalLimits": {
+    "unit": "deg",
+    "min": 22.0,
+    "max": 106.79
+  },
+  "breakBeamChannel": 1
+}

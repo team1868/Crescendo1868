@@ -1,0 +1,75 @@
+{
+  "name": "Flywheel",
+  "flywheelMotor": {
+    "type": "KRAKEN_X60_FOC",
+    "id": 31,
+    "canbus": "rio"
+  },
+  "flywheelFollowerMotor": {
+    "type": "KRAKEN_X60_FOC",
+    "id": 32,
+    "canbus": "rio"
+  },
+  "gearRatio": [[46, 70]],
+  "feedforward": {
+    "s": 0.21,
+    "v": 0.133,
+    "a": 0.0
+  },
+  "trapezoidalLimits": {
+    "unit": "rotations",
+    "velocity": 90.0,
+    "acceleration": 400.0
+  },
+  "defaultTolerances": {
+    "unit": "rot",
+    "lowerTolerance": 20.0,
+    "upperTolerance": 20.0
+  },
+  "flywheelMotorControl": {
+    "clockwisePositive": false,
+    "brakeMode": false,
+    "motor": {
+      "slot0PIDConstants": {
+        "p": 0.0,
+        "i": 0.0,
+        "d": 0.0,
+        "s": 0.0,
+        "g": 0.0,
+        "v": 0.0,
+        "a": 0.0
+      }
+    },
+    "motorCurrentLimits": {
+      "statorEnableLimit": true,
+      "statorPeakLimit": 80,
+      "supplyEnableLimit": true,
+      "supplyPeakLimit": 80,
+      "supplyContinuousLimit": 40,
+      "peakDuration": 0.5
+    }
+  },
+  "flywheelFollowerControl": {
+    "clockwisePositive": true,
+    "brakeMode": false,
+    "motor": {
+      "slot0PIDConstants": {
+        "p": 0.0,
+        "i": 0.0,
+        "d": 0.0,
+        "s": 0.0,
+        "g": 0.0,
+        "v": 0.0,
+        "a": 0.0
+      }
+    },
+    "motorCurrentLimits": {
+      "statorEnableLimit": true,
+      "statorPeakLimit": 80,
+      "supplyEnableLimit": true,
+      "supplyPeakLimit": 80,
+      "supplyContinuousLimit": 40,
+      "peakDuration": 0.5
+    }
+  }
+}

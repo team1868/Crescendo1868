@@ -1,0 +1,20 @@
+{
+  "cameraName": "Arducam_Left",
+  "id": 1,
+  "robotToCamera": {
+    "translation": {
+      "unit": "inch",
+      "x": 26.310971,
+      "y": -6.200775,
+      "z": 6.6929
+    },
+    "rotation": {
+      "unit": "degree",
+      "yaw": 0.0,
+      "pitch": -37.76,
+      "roll": 0.0
+    }
+  },
+  "fieldObjectName": "LEFT",
+  "x_resolution": 1280
+}

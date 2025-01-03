@@ -1,0 +1,73 @@
+{
+  "name": "PBOT Shooter",
+  "flywheelFile": "practicebotFlywheelConf.json",
+  "pivotFile": "practicebotShooterPivotConf.json",
+  "rollerFile": "practicebotShooterRollerConf.json",
+  "pivotHeight": {
+    "unit": "inch",
+    "value": 20.75
+  },
+  "pivotConflict": "intake",
+  "pivotUnsafePositionalLimits": {
+    "unit": "deg",
+    "min": -39.2,
+    "max": 20.0
+  },
+  "targetPivotQuadratic": {
+    "unit": "deg",
+    "coefficients": [-2.27003, 24.1344, -77.5394]
+  },
+  "minPivotQuadratic": {
+    "unit": "deg",
+    "coefficients": [-2.31956, 25.0894, -81.7708]
+  },
+  "maxPivotQuadratic": {
+    "unit": "deg",
+    "coefficients": [-2.2205, 23.1793, -73.3079]
+  },
+  "targetPivotLinearized": {
+    "unitX": "meter",
+    "unitY": "deg",
+    "points": [
+      [1.3335, -51],
+      [1.9431, -37],
+      [2.5527, -29],
+      [3.1623, -24],
+      [3.7719, -19],
+      [4.3815, -17],
+      [4.9911, -15.5],
+      [5.6007, -14.75],
+      [6.2103, -12.7]
+    ]
+  },
+  "maxPivotLinearized": {
+    "unitX": "meter",
+    "unitY": "deg",
+    "points": [
+      [1.3335, -56],
+      [1.9431, -42],
+      [2.5527, -32],
+      [3.1623, -25],
+      [3.7719, -20],
+      [4.3815, -18],
+      [4.9911, -16],
+      [5.6007, -15.3],
+      [6.2103, -12.7]
+    ]
+  },
+  "minPivotLinearized": {
+    "unitX": "meter",
+    "unitY": "deg",
+    "points": [
+      [1.3335, -46],
+      [1.9431, -32],
+      [2.5527, -26],
+      [3.1623, -23],
+      [3.7719, -18],
+      [4.3815, -16],
+      [4.9911, -15],
+      [5.6007, -14.2],
+      [6.2103, -12.7]
+    ]
+  }
+}

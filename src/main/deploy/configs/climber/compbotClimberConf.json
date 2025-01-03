@@ -1,0 +1,6 @@
+{
+  "elevatorFile": "compbotClimberElevatorConf.json",
+  "rollerFile": "compbotClimberRollerConf.json",
+  "hooksFile": "compbotClimberHooksConf.json",
+  "breakBeamChannel": -1
+}

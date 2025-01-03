@@ -1,0 +1,20 @@
+{
+  "cameraName": "Arducam_Backward",
+  "id": 0,
+  "robotToCamera": {
+    "translation": {
+      "unit" :  "inch", 
+      "x": 0.0,
+      "y": 0.0,
+      "z" : 0.0
+    },
+    "rotation": {
+      "unit" :  "degree", 
+      "yaw": 21.0,
+      "pitch": 0.0,
+      "roll": 0.0
+    }
+  },
+  "fieldObjectName": "",
+  "x_resolution": 1280
+}

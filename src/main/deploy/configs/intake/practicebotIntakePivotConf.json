@@ -1,0 +1,80 @@
+{
+  "name": "Intake Pivot",
+  "fusedDevices": {
+    "motor": {
+      "type": "falcon",
+      "id": 40,
+      "canbus": "Default Name"
+    },
+    "encoder": {
+      "type": "cancoder",
+      "id": 41,
+      "canbus": "Default Name"
+    }
+  },
+  "motorToPivot": [
+    [66, 12],
+    [64, 20],
+    [60, 16]
+  ],
+  "encoderToPivot": [[1, 1]],
+  "feedforward": {
+    "s": 0.08,
+    "g": 0.31,
+    "v": 1.15,
+    "a": 0.0
+  },
+  "trapezoidalLimits": {
+    "unit": "deg",
+    "velocity": 180.0,
+    "acceleration": 1080.0
+  },
+  "positionalLimits": {
+    "unit": "deg",
+    "min": -6.0,
+    "max": 77.5
+  },
+  "defaultTolerances": {
+    "unit": "deg",
+    "lowerTolerance": 2.0,
+    "upperTolerance": 2.0
+  },
+  "encoderConfig": {
+    "zeroToOne": true,
+    "clockwisePositive": true,
+    "magnetOffset": {
+      "unit": "deg",
+      "value": -60.47
+    }
+  },
+  "pivotMotorControl": {
+    "clockwisePositive": false,
+    "brakeMode": false,
+    "motorCurrentLimits": {
+      "statorEnableLimit": true,
+      "statorPeakLimit": 80,
+      "supplyEnableLimit": true,
+      "supplyPeakLimit": 80,
+      "supplyContinuousLimit": 80,
+      "peakDuration": 0.8
+    },
+    "motor": {
+      "slot0PIDConstants": {
+        "p": 30.0,
+        "i": 0.0,
+        "d": 0.0,
+        "s": 0.0,
+        "g": 0.0,
+        "v": 0.0,
+        "a": 0.0
+      }
+    },
+    "closedLoopConfigs": {
+      "continuousWrap": true
+    }
+  },
+  "ffOffset": {
+    "unit": "deg",
+    "value": -3.0
+  }
+}
